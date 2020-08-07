@@ -13,9 +13,9 @@ HTML, CSS
 
 ## Implemented Functionality
 
-• Multi page Website.
-• respnsive layout.
-• Contact form.
+- Multi page website.
+- Respnsive mobile-friendly layout.
+- Contact form.
 
 ## Instructions for Running the blog
 
