@@ -37,21 +37,33 @@ img{
   margin-left: 3em;
 }
 
-.post-container {
+.main-container {
   display: grid;
+  grid-template-columns: 4fr 1fr;
   background-color: #FFFFFF;
   margin-left: 3.5em;
   margin-right: 3.5em;
+  padding: 1em;
 }
 
-.postContent{
-  padding-top: 2em;
-  padding-left: 2em;
-  padding-right: 2.5em;
-}
-
-.postContent article{
+.postMeta {
   padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.postMedia {
+   float: left;
+   margin-right: 1rem;
+   margin-bottom: 1rem; 
+}
+
+.postImg {
+  height: 15rem;
+  width: 20rem;
+}
+
+.imgCaption {
+  color: #6c757d;
 }
 
 .postContent .quote{
@@ -63,18 +75,27 @@ img{
 /*Responsive styles*/
 /*Extra small devices */
 @media (max-width: 575.98px){
-  .post-container {
+  .main-container {
     margin-left: 1em;
     margin-right: 1em;
+  }
+
+  .post-container {
+    grid-column: span 2;
   }
 
   .postContent{
     padding-right: 1.5em;
   }
+
+  .postImg {
+    max-height: 10rem;
+    max-width: 15rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px){
-  h1{
+h1{
     font-size: 3em;
   }
 }
