@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin Sans|Josefin Sans:bold|Domine|Domine:bold');
+@import "nav.css";
+@import "postPage.css";
+@import "about.css";
+@import "contact.css";
+
+body {
+  background-color: #f5f5f5;
+}
+
+.page-container{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+.header {
+  height: 85vh;
+  background-color: #ffc40c;
+  color: #FFFFFF;
+  font-family: 'Josefin Sans';
+}
+
+.titleHeader {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.titleHeader h1 {
+  font-size: 5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.titleHeader h2 {
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.grid-container {
+  margin-left: 3.5em;
+  margin-right: 3.5em;
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.recentHeader {
+  padding: 2em;
+  grid-column: span 2;
+  justify-self: center;
+}
+
+.head {
+  font-size: 20px;
+  font-family: 'Josefin Sans';
+  font-weight: bold;
+  color: #5a5a5a;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  margin-bottom: 30;
+  border-bottom: 1px solid #cccccc;
+}
+
+.date{
+  padding-top: 3em;
+}
+
+.dateDay {
+  font-family: 'Domine';
+  font-weight: bold;
+  font-size: 3em;
+  color: #ffc40c;
+  text-align: center;
+  display: block;
+}
+
+.dateMonth {
+  font-family: 'Domine';
+  text-align: center;
+  display: block;
+}
+
+.post{
+  padding: 3em 2em;
+}
+
+.post p {
+ font-family: 'Domine';
+ color: #444444;
+ padding-top: 15px;
+}
+
+.post .title {
+  font-size: 2em;
+}
+
+.credits {
+  font-family: 'Domine';
+  color: #a6a6a6;
+}
+
+.button {
+    display: block;
+    background: #ffc40c;
+    color: #FFFFFF;
+    border: 1px solid #ffc40c;
+    font-family: 'Josefin Sans';
+    text-align: center;
+    width: 200px;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    font-size: 16px;
+}
+
+.button:hover, .button:focus {
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #a6a6a6;
+  color: #FFFFFF;
+  padding: 1.5em 2em;
+}
+
+.footer-rights {
+  padding: .2em;
+}
+
+.footer-social {
+  padding: .2em;
+}
+
+.footer-social a {
+  color: #FFFFFF;
+}
+
+.footer-social a:hover, a:focus {
+  color: #686868;
+  text-decoration:none;
+}
+
+/*Responsive styles*/
+/*Extra small devices */
+@media (max-width: 575.98px){
+  .nav-link {
+    font-size: .8em;
+  }
+
+  .titleHeader h1 {
+    font-size: 2.7em;
+  }
+
+  .titleHeader h2 {
+    font-size: 2.5em;
+  }
+
+  .grid-container {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .date {
+    padding-top: 2em;
+    padding-left: 1em;
+    grid-column: span 2;
+  }
+
+  .post {
+    padding: 2em 1em;
+    grid-column: 2;
+  }
+
+  .post{
+    padding-top: 5px;
+  }
+
+  .date{
+    padding-top: 50px;
+  }
+
+  .dateDay{
+    display:inline;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffc40c;
+  }
+
+  .dateMonth{
+    display:inline;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffc40c;
+  }
+
+  .text-block h1{
+    font-size: 2.5em;
+  }
+
+  .page-footer {
+    flex-direction: column;
+    padding: 1em;
+  }
+
+}

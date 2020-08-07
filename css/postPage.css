@@ -1,0 +1,80 @@
+.post-cover{
+  height: 85vh;
+}
+
+.post-cover h1{
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 3.9em;
+  font-family: 'Josefin Sans';
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.text-block {
+  display: flex;
+  align-items: center;
+  position:absolute;
+  background: rgba(000, 000, 000, 0.5);
+  color: #FFFFFF;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 85vh;
+}
+
+.postHeaderText{
+  margin-right: 3em;
+  margin-left: 3em;
+}
+
+.post-container {
+  display: grid;
+  background-color: #FFFFFF;
+  margin-left: 3.5em;
+  margin-right: 3.5em;
+}
+
+.postContent{
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-right: 2.5em;
+}
+
+.postContent article{
+  padding-top: 1em;
+}
+
+.postContent .quote{
+  color: #ffc40c;
+  font-family: 'Josefin Sans';
+  font-weight: bold;
+}
+
+/*Responsive styles*/
+/*Extra small devices */
+@media (max-width: 575.98px){
+  .post-container {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .postContent{
+    padding-right: 1.5em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+  h1{
+    font-size: 3em;
+  }
+}

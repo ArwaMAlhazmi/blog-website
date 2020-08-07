@@ -1,0 +1,21 @@
+.contact-container {
+  padding-top: 100px;
+  background-color: #FFFFFF;
+  margin-left: 3.5em;
+  margin-right: 3.5em;
+  min-height: 100%;
+  flex: 1;
+}
+
+.contactForm {
+	padding: 1em;
+}
+
+/*Responsive styles*/
+/*Extra small devices */
+@media (max-width: 575.98px){
+  .contact-container {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
