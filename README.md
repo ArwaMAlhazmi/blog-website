@@ -1,10 +1,10 @@
-# Landing Page Project
+# Blog Website
 
 ## Table of Contents
 
-* [Instructions](#Project Overview)
-* [Instructions](#Implemented Functionality)
-* [Instructions](#Instructions for Running the Site)
+* [Project Overview](#Project-Overview)
+* [Implemented Functionality](#Implemented-Functionality)
+* [Instructions for Running the blog](#Instructions-for-Running-the-Blog)
 
 ## Project Overview
 
@@ -17,7 +17,6 @@ HTML, CSS
 • respnsive layout.
 • Contact form.
 
-## Instructions for Running the Site
+## Instructions for Running the blog
 
 Clone the GitHub repository and use index.html to run the app in your browser.
-
