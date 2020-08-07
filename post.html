@@ -15,27 +15,30 @@
   <!-- the header-->
   <div class="container-fluid px-0 header">
 
-    <nav class="navbar navbar-expand-md fixed-top">
-      <span class="navbar-text d-flex w-50 mr-auto">
-        <a class="nav-link" href="index.html"> Blog Name</a>
-      </span>
-      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse w-100" id="collapsingNavbar">
-        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <nav class="Navbar fixed">
+        <div class="wrapper">
+          <span class="navBrand navLink">
+            <a class="" href="index.html"> Blog Name</a>
+          </span>
+          <div class="navToggler navLink" onclick="toggleShow()">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+
+        <div class="navItems" id="">
+          <ul class="navLinks">
+            <li class="navLink">
+              <a class="" href="index.html">Home</a>
+            </li>
+            <li class="navLink">
+              <a class="" href="about.html">About</a>
+            </li>
+            <li class="navLink">
+              <a class="" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
     <div class="post-cover">
       <img src="img/pexels-photo-374710.jpeg" alt="city">
@@ -58,7 +61,7 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque modi libero earum, voluptatum laudantium voluptate explicabo! Expedita, quam ducimus dolor? Eligendi voluptates eius quidem aspernatur at, fugiat laudantium reprehenderit odit. Officia sed, cumque laborum culpa officiis amet fugit pariatur exercitationem, optio quis est repellendus quae rerum, quia! Quisquam, praesentium, rem. Iusto officia eligendi, debitis blanditiis ut sunt ducimus quibusdam nulla vel esse numquam facere, quas earum ea pariatur dolore vitae fugiat magni? Culpa quisquam sit, unde. Repellendus asperiores, ea ducimus dignissimos inventore facere unde distinctio necessitatibus nam atque reiciendis ipsam tempora, natus commodi, quidem officiis neque quia earum! Cum, laborum!
       </p>
       <span class="quote"> 
-        &#8223; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, fuga? &#8223;
+            <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, fuga?</q>
       </span>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta molestiae corrupti fuga tenetur expedita aut laborum, culpa rerum quos numquam inventore repellendus velit. Quisquam dolores, exercitationem sequi nulla similique architecto. Ipsam animi veritatis rerum earum enim mollitia iusto nulla doloribus, quod, facere, voluptatum id ad aspernatur amet, error quia repudiandae soluta qui quas tenetur. Cupiditate libero placeat iste aut. Quia accusantium assumenda illo vel explicabo dolore numquam dignissimos, id, aliquam natus ad ex. Veritatis quos eligendi inventore. Obcaecati doloremque cum tempore soluta aperiam, sed veniam voluptate tenetur ipsum, ipsam sint reprehenderit, error fugit impedit consectetur. Debitis aliquam animi odit dolorem fuga voluptatum quod iusto, distinctio! Vitae dolor, ut tempore veritatis illum a, rem repellendus accusamus ab maiores architecto sunt unde maxime, eveniet minus officiis cumque ad enim doloribus. Iusto rerum omnis ex velit, obcaecati reprehenderit dolorum ducimus ab maiores fugiat expedita assumenda alias laudantium porro, itaque officiis rem blanditiis esse.
@@ -93,10 +96,15 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script>
     $(window).scroll(function(){ 
-    $('nav').toggleClass('scrolled', $(this).scrollTop()> $(window).height() * 0.85)
+    $('nav').toggleClass('scrolled', $(this).scrollTop()> $(window).height() * 0.80)
     });
   </script>
+  <script>
+    function toggleShow() {
+      const navLinks = document.querySelector('.navLinks');
 
-
+      navLinks.classList.toggle('show');
+  }
+  </script>
 </body>
 </html>

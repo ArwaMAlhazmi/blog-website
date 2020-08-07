@@ -16,18 +16,19 @@ body {
 
 .header {
   height: 85vh;
-  background-color: #ffc40c;
   color: #FFFFFF;
   font-family: 'Josefin Sans';
 }
 
 .titleHeader {
   height: 100%;
+  background-color: #ffc40c;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 1em;
 }
 
 .titleHeader h1 {
