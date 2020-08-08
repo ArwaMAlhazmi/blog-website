@@ -20,11 +20,3 @@ HTML, CSS
 ## Instructions for Running the blog
 
 Clone the GitHub repository and use index.html to run the app in your browser.
-
-## Instructions for Running the Site
-
-Clone the GitHub repository and use index.html to run the app in your browser.
-
-## Instructions for Running the blog
-
-Clone the GitHub repository and use index.html to run the app in your browser.
