@@ -46,6 +46,10 @@ img{
   padding: 1em;
 }
 
+.post-container {
+  padding-right: .5em;
+}
+
 .postMeta {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -55,6 +59,8 @@ img{
    float: left;
    margin-right: 1rem;
    margin-bottom: 1rem; 
+   margin-left: 0rem;
+   margin-top: 0rem;
 }
 
 .postImg {

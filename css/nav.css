@@ -1,9 +1,10 @@
 .Navbar {
   display: flex;
   justify-content: space-between;
-  padding: .5em 1em;
   background-color: transparent;
   z-index: 1;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans'
 }
 
 .bg{
@@ -24,16 +25,24 @@
 .wrapper {
 	display: flex;
 	justify-content: space-between;
+	padding-left: 1em;
 }
 
 .navBrand {
 	font-size: 1.5em;
+	display: flex;
+	align-items: center;
 }
 
 .navLinks {
 	display: flex;
 	justify-content: space-between;
 	list-style-type: none;
+	padding-right: 1em;
+}
+
+.navItems {
+	padding: .5em;
 }
 
 .navLink{
@@ -42,6 +51,7 @@
 
 .navLink a {
 	color: #FFFFFF;
+	text-decoration: none;
 }
 
 .navLink a:hover, nav a:focus {

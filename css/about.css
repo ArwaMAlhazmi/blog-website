@@ -3,3 +3,10 @@
   padding-right: 2em;
   padding-left: 2em;
 }
+
+.profile-text {
+  font-family: 'Domine';
+  font-weight: 400;
+  color: #444444;
+  font-size: 1rem;
+}

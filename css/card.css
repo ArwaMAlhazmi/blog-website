@@ -2,6 +2,12 @@
   display: flex;
   flex-direction: column;
   padding: 1em;
+  border: .2px solid #a6a6a6;
+  border-radius: 3px;
+}
+
+.side {
+  margin-top: 2.3em;
 }
 
 .cardPic {
@@ -14,14 +20,16 @@
   padding-bottom: 1em;
 }
 
+.cardLink {
+  display: flex;
+  justify-content: start;
+}
+
 .cardLink a {
-  display: block;
-  margin-right: 3em;
-  background: #686868;
-  color: #FFFFFF;
+  color: #686868;
+  font-size: 1.5em;
   font-family: 'Josefin Sans';
-  text-align: center;
-  padding: .5em .7em;
+  padding-right: 1em;
 }
 
 .cardLink a:hover, a:focus {
@@ -41,15 +49,17 @@
   	padding-left: 1em;
   }
 
-  .profile-card {
+  .side {
   	grid-column: span 2;
+    margin-top: 0em;
   }
 
   .profile-card {
   	flex-direction: row;
   	justify-content: space-between;
   	align-items: center;
-  	padding: 0em;
+  	padding-right: 1em;
+    padding-left: 1em;
   }
 
   .cardPic {
@@ -65,5 +75,9 @@
   .profile-text {
   	grid-column: 1/-1;
   	padding: .2em;
+  }
+
+  .cardLink {
+    justify-content: end;
   }
 } 
